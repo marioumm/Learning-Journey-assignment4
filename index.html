@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Website</title>
+    <link rel="icon" href="/images/favicon.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <header class="bg-black position-fixed top-0 start-0 end-0 z-fixed border-bottom border-1 border-secondary">
+        <nav class="navbar md:navbar-expand w-90 m-auto bg-transparent w-md-100">
+            <div class="container-fluid w-md-100">
+              <a class="navbar-brand text-xl" href="#"><i class="fa-solid fa-gamepad"></i> GameArena</a>
+              <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+              </button>
+              <dialog class="mob-menu drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+                <div class="drawer-body mb-2 md:mb-0">
+                  <ul class="nav navbar-nav me-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">OUR GAMES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">What We Do</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Our Team </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                  </ul>
+                  <hr>
+                  <div class="action-btns d-flex align-items-center">
+                    <div class="icons">
+                        <div class="notification">
+                            <i class="fa-regular fa-bell"> </i> <span>Notification</span>
+                        </div>
+                        <div class="messages">
+                            <i class="fa-regular fa-message"></i> <span>Messages</span>
+                        </div>
+                    </div>
+                    <button class="sign-btn border border-1 border-black rounded-5 px-5 py-2">Sign In</button>
+                  </div>
+                </div>
+              </dialog>
+            </div>
+          </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="inner w-90 m-auto d-flex flex-wrap gap-5 align-items-center justify-content-between">
+          <div>
+            <div class="intro d-flex flex-wrap flex-column align-items-center text-center">
+              <h1>THE ULTIMATE
+                  <span>GAMING</span>
+                  EXPERIENCE
+                  </h1>
+                  <p class="text-secondary">Join millions of gamers worldwide in the most competitive eSports tournaments. Experience next-level gaming with cutting-edge technology and endless possibilities.</p>
+                  <div class="intro-btn">
+                    <button class="start-btn">Start Gaming Now</button>
+                    <button class="watch-btn">Watch Tournaments</button>
+                  </div>
+            </div>
+          </div>
+          <div>
+            <figure class="intro-image">
+              <img src="images/hero-img.png" class="w-50" alt="">
+            </figure>
+            <div class="image-tag">
+              <i class="fa-solid fa-trophy"></i>
+              <div class="caption">
+                <p>Active Players</p>
+                <h3>2.5M+</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="js/all.js"></script>
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

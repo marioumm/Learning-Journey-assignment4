@@ -1,0 +1,93 @@
+:root{
+    --identity-color: #cbfe1c;
+    --identity-dark-bg-color: #0b0e13;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "ChakraPetch";
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "DaysOne";   
+}
+@font-face {
+    font-family: "ChakraPetch";
+    src: url(../fonts/Chakra_Petch/ChakraPetch-Regular.ttf);
+}
+@font-face {
+    font-family: "ChakraPetch";
+    src: url(../fonts/Chakra_Petch/ChakraPetch-Bold.ttf);
+    font-weight: bold
+}
+@font-face {
+    font-family: "DaysOne";
+    src: url(../fonts/Days_One/DaysOne-Regular.ttf);
+}
+.w-90{
+    width: 90%;
+}
+.nav-link:hover, .active{
+    color: var(--identity-color);
+}
+.navbar-brand{
+    color: var(--identity-color);
+    font-weight: bold;
+}
+.navbar-brand i{
+    font-weight: bold;
+}
+.action-btns svg{
+    font-size: 20px;
+}
+.action-btns .sign-btn{
+    background-color: var(--identity-color);
+    font-weight: bold;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+/* The light sweep */
+.navbar .action-btns .sign-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.8),
+        transparent
+    );
+
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+    pointer-events: none;
+}
+.navbar .action-btns .sign-btn:hover::after {
+    left: 150%;
+}
+.hero{
+    min-height: 100vh;
+    padding-top: 100px;
+}
+.hero .inner{
+    padding: 45px 0;
+}
+.hero .inner .intro h1{
+    font-size: 45px;
+}
+.hero .inner .intro h1 span{
+    color: var(--identity-color);
+}
+.hero .inner .intro .intro-btn{
+}
+.hero .inner .intro .intro-btn button.start-btn{
+}
+.hero .inner .intro .intro-btn button.watch-btn{
+}

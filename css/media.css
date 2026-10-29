@@ -1,0 +1,68 @@
+/* mobile sm */
+@media screen and (max-width: 767px) {
+   .mob-menu{
+    width: 100%;
+    padding: 0;
+    border: none;
+    top: 90px;
+   }
+   .action-btns{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+   }
+   .action-btns .icons{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+   }
+}
+/* taplets md */
+@media screen and (min-width: 768px) {
+   nav hr{
+      display: none;
+     }
+     nav .action-btns .icons span{
+      display: none;
+     }
+     .w-md-100{
+      width: 100%;
+     }
+     .action-btns{
+      flex-direction: row;
+      align-items: stretch;
+      gap: 10px;
+     }
+     .action-btns .icons{
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+     }
+     .nav-link{
+      font-size: 16px;
+     }
+}
+/* Laptops & desktops lg */
+@media screen and (min-width: 1022px) {
+   nav hr{
+    display: none;
+   }
+   nav .action-btns .icons span{
+    display: none;
+   }
+   .action-btns{
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10px;
+   }
+   .action-btns .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+   }
+   .w-90{
+      width: 90%;
+  }
+}
