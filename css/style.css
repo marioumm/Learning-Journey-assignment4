@@ -73,11 +73,15 @@ h1,h2,h3,h4,h5,h6{
     left: 150%;
 }
 .hero{
-    min-height: 100vh;
-    padding-top: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.898)),  url("../images/hero-bg.jpg");
+    background-size: cover;
 }
 .hero .inner{
     padding: 45px 0;
+    height: 100vh;
+}
+.hero .inner .intro{
+    align-items: center;
 }
 .hero .inner .intro h1{
     font-size: 45px;
@@ -85,9 +89,55 @@ h1,h2,h3,h4,h5,h6{
 .hero .inner .intro h1 span{
     color: var(--identity-color);
 }
-.hero .inner .intro .intro-btn{
-}
-.hero .inner .intro .intro-btn button.start-btn{
+.hero .inner .intro .intro-btn button{
+    border: 2px solid var(--identity-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: black;
+    background-color: var(--identity-color);
+    font-weight: bold;
+    
 }
 .hero .inner .intro .intro-btn button.watch-btn{
+    background-color: transparent;
+    color: var(--identity-color);
+}
+.hero .intro-visual {
+    flex: 1 1 45%;
+    min-width: 0;
+    position: relative;
+}
+.hero .inner .intro-image {
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    overflow: hidden;
+}
+.hero .inner .intro-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid var(--identity-color);
+    border-radius: 20px;
+    display: block;
+
+}
+.hero .inner .intro-visual .image-tag{
+    bottom: -15px;
+    left: -15px;
+
+}
+.hero .inner .intro-visual .image-tag p{
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+
+}
+.hero .inner .intro-visual .image-tag h3{
+    font-size: 20px;
+}
+.hero .inner .intro-visual .image-tag svg{
+    color: var(--identity-color);
+    font-size: 20px;
 }

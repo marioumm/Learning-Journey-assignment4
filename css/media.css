@@ -65,4 +65,25 @@
    .w-90{
       width: 90%;
   }
+  .w-lg-100{
+   width: 100%;
+  }
+  .w-lg-50{
+   width: 50%;
+  }
+  .hero .inner .intro{
+   align-items: start;
+}
+  .hero .inner .intro h1{
+   font-size: 60px;
+   text-align: start;
+}
+  .hero .inner .intro p{
+   text-align: start;
+}
+
+.hero .inner .intro .intro-btn{
+   align-items: start;
+}
+
 }
